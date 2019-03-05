@@ -1,0 +1,54 @@
+*
+ box-sizing: border-box
+
+.container 
+ width: 1170px
+ margin: auto
+
+body
+ +reg
+
+img
+ width: 100%
+
+a
+ text-decoration: none
+
+.phone
+ +bold
+ color: $text-color
+
+.button
+ outline: none
+ border-radius: 10px
+ background-color: $main-color
+ border: none 
+ +bold
+ &:hover
+  background-color: lighten($main-color, 10%)
+  cursor: pointer
+ &-up
+  display: none
+  position: fixed
+  bottom: 20px
+  left: 20px
+  min-width: 50px
+  min-height: 50px
+  font-size: 20px
+
+
+.title
+ text-align: center
+ font-size: 30px
+ margin: auto
+ +bold
+
+.subtitle
+ display: block
+ font-size: 16px
+
+.input
+ border: 1px solid $border-input
+ padding: 22px 27px
+ font-size: 15px
+ border-radius: 10px
