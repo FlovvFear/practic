@@ -1,0 +1,52 @@
+.hero
+ background-color: $secondary
+ &-block
+  display: flex
+  justify-content: space-between
+		padding: 50px 0 45px 0
+ &-img
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
+  animation: fadeIn 3s
+  &__main
+			width: 100%
+	&__clock
+		max-width: 20px
+	&__calculator
+		max-width: 16px
+	&__paint
+		max-width: 20px
+ &-info
+  color: $text-color
+  flex-basis: 50%
+  padding-right: 100px
+  &__title
+   font-size: 41px
+   margin-bottom: 40px
+   line-height: 55px
+   +bold
+  &__subtitle
+   display: inline-block
+   margin-bottom: 65px
+   font-size: 20px
+   +bold
+ &-list
+  padding: 0
+  margin: 0
+  &__item
+   display: flex
+   align-items: center
+   margin-bottom: 25px
+   &:last-child
+    margin-bottom: 0
+  &__image
+   display: flex
+   justify-content: center
+   align-items: center
+   margin-right: 30px
+   width: 40px
+   height: 40px
+   border: 2px solid $main-color
+   border-radius: 50%
+  &__text
+   font-size: 14px
+   line-height: 24px
