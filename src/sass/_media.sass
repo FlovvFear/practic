@@ -21,6 +21,10 @@
  .card
 		&s
 			justify-content: space-around
+ .step
+		&s
+		&:after
+			display: none
 
 
 @media (max-width: 992px)
@@ -81,6 +85,10 @@
    width: 100%
   &__button
    margin-bottom: 20px
+	.step
+		&s
+			&-wrap
+				flex-direction: column
   
 
 @media (max-width: 567px)
@@ -109,6 +117,9 @@
     margin-bottom: 20px
    &__text
     line-height: normal
+		&-img
+			max-width: 270px
+			margin-left: 6px
  .offer
   &-block
    &__title
@@ -117,6 +128,7 @@
     line-height: 20px
    &__subtitle
     font-size: 14px
+				margin-bottom: 35px
   &__button
    font-size: 14px
    padding: 0 60px
@@ -146,10 +158,30 @@
 		&__subtitle
 			font-size: 14px
 	.card
+		&:last-child
+			margin-bottom: 0
 		&__text
 			padding: 30px 0
 		&__title
 			font-size: 14px
 			margin-bottom: 10px
+	.step
+		&s
+			&-block
+				padding-top: 7px
+			&__title
+				font-size: 18px
+				line-height: normal
+				margin-bottom: 24px
+			&__subtitle
+				font-size: 14px
+				margin-bottom: 33px
+		&__image
+			margin-bottom: 7px
+		&__text
+			font-size: 12px
+			line-height: 16px
+			margin-bottom: 30px
+
 			
 		
